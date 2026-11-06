@@ -18,7 +18,7 @@ version:
 - Delegate what a child process can do; keep in-process only what must be
   in-process, and own natively only what needs the process relationship.
 
-winsh owns the language. `winuxcmd` owns files and text. `winadm` owns
+winsh owns the language. `winuxcmd` owns files and text. `wmng` owns
 processes and system. No command is known to the shell by name.
 
 ## Scope
@@ -32,14 +32,14 @@ scripts, and the orphan guarantee (Job Object).
 
 Out: arrays, `[[ ]]`, process substitution, coprocesses, brace expansion,
 extglob, `declare`, completion/key bindings (the editor's job), and every
-system builtin that belongs to winadm.
+system builtin that belongs to wmng.
 
 ### `trap`: signals are refused, EXIT is honoured
 
 `trap` accepts `EXIT` (or `0`) only. Naming a real signal is an **error**, not
 a silent no-op — a script that believes it installed a SIGINT handler and did
 not would fail in the least debuggable way possible. Windows has no POSIX
-signals; when winadm grows console-event handling, it will be a native
+signals; when wmng grows console-event handling, it will be a native
 mechanism, not a `trap` emulation.
 
 ### The one expansion rule worth stating
