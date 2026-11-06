@@ -8,8 +8,10 @@ POSIX is still missing. Nothing here is stable.
 
 ## Design contract
 
-The governing document is **[../DESIGN.md](../DESIGN.md)** — "UNIX style,
-Windows semantics". Read it before adding anything. The short version:
+The governing design document is DESIGN.md, one level above this
+repository — development documentation, not part of the repo. Its rule:
+"UNIX style, Windows semantics". Read it before adding anything. The short
+version:
 
 - Style (CLI shape, options, output, exit codes) is copied from UNIX.
 - Semantics (mechanisms, capabilities, limits) are Windows-native. No emulation.
