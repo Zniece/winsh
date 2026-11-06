@@ -1,0 +1,15 @@
+[package]
+name = "winsh"
+version = "0.0.1"
+edition = "2021"
+rust-version = "1.75"
+description = "A small POSIX-sh-level shell core for Windows"
+license = "MIT"
+
+[[bin]]
+name = "winsh"
+path = "src/main.rs"
+
+# No dependencies, deliberately. Every crate added here is a decision, not a
+# convenience.
+[dependencies]

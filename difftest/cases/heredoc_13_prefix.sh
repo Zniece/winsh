@@ -1,0 +1,3 @@
+cat <<END
+ENDX
+END

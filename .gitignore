@@ -1,0 +1,6 @@
+/target
+
+# Windows device-name files that test runs can leave behind (see ISSUES.md);
+# git on Windows cannot track them at all.
+CONIN$
+CONOUT$
